@@ -1,0 +1,145 @@
+<!--
+  -- Student Name: Carson Cooper
+  -- Student ID: 040 633 387
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 1
+  -- Assignment: 3
+  -- Date Submitted:  July 12, 2023
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K9 Agility</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/products.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header id="showcase" class="grid">
+    <div class="bg-image" alt="Tri-colour dog looking instensely to the left."></div>
+    <div class="content-wrap">
+        <h1 class="main-title">K9 Agility</h1>
+        <h2 class="main-title">Health. Strength. Fitness.</h2>
+        <a href="#section-a" class="btn">Main Content</a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <li><a href="index.htm">Home</a></li>
+          <li class="submenu">
+            <a href="products.htm">Products</a>
+            <ul class="sub-menu">
+              <li><a href="product.htm">Product</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.htm">About Us</a></li>
+          <li><a href="contact-us.htm">Contact Us</a></li>
+          <li><a href="privacy.htm">Privacy Polic</a></li>
+          <li><a href="terms.htm">Terms & Conditions</a></li>
+          <li><a href="cart.htm">Cart</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+   
+    <!-- Section B Cart Table -->
+        <h2>Your Cart</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Products</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                
+              <td><img src="assets/images/AgilityTunnel_thumbnail.jpg" alt="Agility Tunnel"></td>
+              <td>Agility Tunnel</td>
+              <td>1</td>
+              <td>$19.99</td>
+              <td>$19.99</td>
+              <td><a class="remove" href="" onclick="removeItem(this.parentNode.parentNode)">Remove</a></td>
+            </tr>
+            <tr>
+              <td><img src="assets/images/DogHarness_thumbnail1.jpg" alt="Product 2"></td>
+              <td>Harness</td>
+              <td>1</td>
+              <td>$39.99</td>
+              <td>$39.99</td>
+              <td><a class="remove" href="#" onclick="removeItem(this.parentNode.parentNode)">Remove</a></td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>Subtotal</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>$59.98</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>Shipping</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>Sales Tax</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>$7.80</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>Order Total</td>
+            </tr>
+            <tr>
+              <td colspan="4"></td>
+              <td>$72.78</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="btn">Checkout</button>
+    </section>
+      
+     <!-- Footer -->
+     <footer id="main-footer" class="grid">
+      <div>K9 Agility &copy; 2023</div>
+
+      <footer id="main-footer">
+          <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="about-us.htm">About Us</a></li>
+            <li><a href="contact-us.htm">Contact Us</a></li>
+            <li><a href="products.htm">Products</a></li>
+            <li><a href="privacy.htm">Privacy Policy</a></li>
+            <li><a href="termsconditions.htm">Terms & Conditions</a></li>
+            <li><a href="cart.htm">Cart</a></li>
+          </ul>
+        </footer>
+  </footer>
+</body>
+</html>

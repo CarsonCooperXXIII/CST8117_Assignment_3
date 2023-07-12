@@ -1,0 +1,257 @@
+/*
+  -- Student Name: Carson Cooper
+  -- Student ID: 040 633 387
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 1
+  -- Assignment: 3
+  -- Date Submitted:  July12, 2023
+  */
+/* Product Cards */
+
+.card {
+  display: flex;
+  justify-content: auto;
+  max-width: auto;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.product-price {
+  color: black;
+  font-size: 22px;
+}
+
+.add-to-cart {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #FF9D04;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+
+.add-to-cart:hover {
+  opacity: 0.7;
+}
+
+/* Section C Our Location */
+
+#section-c {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.content-wrap {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.content-title {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.location-image {
+  max-width: 50%;
+  height: auto;
+  align-self: flex-end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section */
+
+.float{
+  float: left;
+  width: auto;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.content-text{
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Pagination 
+Author(s): W3Schools
+Date: N/A
+Title of program/source code: Pagination
+Code version: N/A
+Type: source code
+Web address: https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_pagination_transition
+*/
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #FF9D04;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #005EB3;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* Search Button */
+
+.search-form {
+  height: 300px;
+  width: 200px;
+  border: solid 1px #FF9D04;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -150px 0 0 -100px;
+  overflow: hidden;
+}
+.search-items {
+  height: calc(100% - 35px);
+  overflow: auto;
+}
+.search-item {
+  background:#ddd;
+  height: 30px;
+  padding: 5px 10px;
+  color: #005EB3;
+  border-bottom: solid 1px #FF9D04;
+}
+
+/* Shopping Cart */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Your Cart Remove Link */
+
+.remove{
+  color: #005EB3;
+}
+
+.remove:hover{
+  color: red;
+}
+
+/* Paginations */
+#section-c{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Product Search Form */
+
+#section-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#filter-form {
+  margin-bottom: 20px;
+}
+
+#keyword-input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.product-list {
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+/* Sort Products */
+
+#section-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-list {
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.product-title {
+  margin: 0;
+}
+
+.product-price {
+  font-weight: bold;
+}
+
+.sort-options {
+  margin-top: 20px;
+}
+
+.sort-options label {
+  margin-right: 10px;
+}
+
+.sort-options select {
+  padding: 5px;
+}
+

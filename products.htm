@@ -1,0 +1,163 @@
+<!--
+  -- Student Name: Carson Cooper
+  -- Student ID: 040 633 387
+  -- Course: CST8117 - Cross-Platform Web Design
+  -- Semester: 1
+  -- Assignment: 3
+  -- Date Submitted:  July 12, 2023
+  -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K9 Agility</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/products.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header id="showcase" class="grid">
+    <div class="bg-image" alt="Tri-colour dog looking instensely to the left."> </div>
+    <div class="content-wrap">
+        <h1 class="main-title"></h1>
+        <h2 class="main-title"></h2>
+        <a href="#section-a" class="btn">Main Content</a>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox">
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <li><a href="index.htm">Home</a></li>
+            <li class="submenu">
+              <a href="products.htm">Products</a>
+              <ul class="sub-menu">
+                <li><a href="product.htm">Product</a></li>
+              </ul>
+            </li>
+            <li><a href="about-us.htm">About Us</a></li>
+            <li><a href="contact-us.htm">Contact Us</a></li>
+            <li><a href="privacy.htm">Privacy Polic</a></li>
+            <li><a href="terms.htm">Terms & Conditions</a></li>
+            <li><a href="cart.htm">Cart</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Section A -->
+    <!-- Gestalt Principle: proximity. -->
+    <section id="section-a" class="grid">
+        <div class="bg-image2"></div>
+        <div class="content-wrap">
+            <h1 class="content-title">K9 Agility</h1>
+            <h2 class="content-title">Health. Strength. Fitness.</h2>
+        </div>
+        <div class="content-text">
+        </div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+      <ul>
+          <!-- Card 1 -->
+          <li>
+              <div class="card">
+                  <img src="assets/images/DogHarness_thumbnail.jpg" alt="Grey dog harness.">
+              </div>
+              <div class="card-content">
+                  <h3 class="card-title">Dog Harness</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas animi repellendus consectetur sint vel voluptas maiores ipsam officia obcaecati? Labore perferendis vel itaque? Fugiat magnam quis accusantium quia, animi nisi?</p>
+                  <span class="product-price">$19.99</span>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </li>
+      
+          <!-- Card 2 -->
+          <li>
+              <div class="card">
+                  <img src="assets/images/DogTravelWaterBowl.jpg" alt="Blue collapsible water bowl.">
+              </div>
+              <div class="card-content">
+                  <h3 class="card-title">Collapsible Water Bowl</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas animi repellendus consectetur sint vel voluptas maiores ipsam officia obcaecati? Labore perferendis vel itaque? Fugiat magnam quis accusantium quia, animi nisi?</p>
+                  <span class="product-price">$24.99</span>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </li>
+  
+          <!-- Card 3 -->
+          <li>
+              <div class="card">
+                  <img src="assets/images/DogTagsBall.jpg" alt="Black and white dog Border Collie holding a white and green ball in its mouth..">
+              </div>
+              <div class="card-content">
+                  <h3 class="card-title">Ball</h3>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas animi repellendus consectetur sint vel voluptas maiores ipsam officia obcaecati? Labore perferendis vel itaque? Fugiat magnam quis accusantium quia, animi nisi?</p>
+                  <span class="product-price">$49.99</span>
+                  <button class="add-to-cart">Add to Cart</button>
+              </div>
+          </li>
+        </ul>
+  </section>
+  <section id="section-products" class="grid">
+    <section id="section-products" class="grid">
+      <form id="filter-form">
+        <input type="text" id="keyword-input" placeholder="Enter keyword...">
+        <button type="btn">Filter</button>
+      </form>
+      </section>
+    <div class="sort-options">
+      <label for="sort-by">Sort By:</label>
+      <select id="sort-by">
+        <option value="name-asc">Name (A to Z)</option>
+        <option value="name-desc">Name (Z to A)</option>
+        <option value="price-asc">Price (Low to High)</option>
+        <option value="price-desc">Price (High to Low)</option>
+      </select>
+    </div>
+  </section>
+</main>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+      </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="grid">
+        <div>K9 Agility &copy; 2023</div>
+
+        <footer id="main-footer">
+            <ul>
+              <li><a href="index.htm">Home</a></li>
+              <li><a href="about-us.htm">About Us</a></li>
+              <li><a href="contact-us.htm">Contact Us</a></li>
+              <li><a href="products.htm">Products</a></li>
+              <li><a href="privacy.htm">Privacy Policy</a></li>
+              <li><a href="termsconditions.htm">Terms & Conditions</a></li>
+              <li><a href="cart.htm">Cart</a></li>
+            </ul>
+          </footer>
+    </footer>
+
+</body>
+</html>
